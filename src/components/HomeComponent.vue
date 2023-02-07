@@ -8,29 +8,29 @@
          <h2> a front-end developer </h2>
          <h2> and, industrial engineer.</h2>
       </div>
-      <div class="col-12 col-lg-5 order-first order-lg-last">
-        <img src="../assets/profile.png" class="img-fluid card-img" />
+      <picture class="  col-12 col-lg-5 order-first order-lg-last">
+        <img src="../assets/profile.png" class="img-fluid d-block m-auto card-img" />
         <div class="social-icons">
           <a target="_blank"
 href="https://www.linkedin.com/in/aysegulkaradan/"
-              class="icons" >
+              class="icons mx-4" >
               <font-awesome-icon icon="fa-brands fa-linkedin" />
             </a>
             <a target="_blank"
 href="mailto:hello@aysegulk.me"
-              class="icons" >
+              class="icons mx-4" >
               <font-awesome-icon icon="fa-solid fa-envelope" />
             </a>
             <a target="_blank"
 href="https://github.com/karadanay7"
-              class="icons" >
+              class="icons mx-4" >
               <font-awesome-icon icon="fa-brands fa-github" />
             </a>
           
          
        
       </div>
-      </div>
+      </picture>
     </div>
   </div>    
 </template>
@@ -43,14 +43,16 @@ export default {
 <style scoped>
 .icons{
   font-size: 50px;
-    margin-right: 50px;
+   
     cursor: pointer;
     color: white;
-  margin-left: 33px;
-  margin-top: 15px;
+  justify-content: center;
+ 
     
 }
-
+.social-icons{
+  text-align: center;
+}
 .container{
   padding: 100px 0 0 0;
   height: 100vh;
@@ -71,6 +73,7 @@ export default {
   box-shadow: 0px 0px 70px rgba(0,0,0,.9);
   
 }
+
 h2{
  margin-left: 30px;
   font-size: 70px;
@@ -78,13 +81,21 @@ h2{
   justify-content: left;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 994px) {
   h2 {
-    font-size: 36px;
+    font-size: 40px;
   }
-  .card-img{ 
-   min-height: 100px;
+  
+  .icons{
+    font-size: 30px;
+    margin-left: 70px;
+    margin-right: 5px;
   }
+   .card-img{
+   max-width: 200px;
+    max-height: 200px;
+   }
+  
 }
 
 </style>

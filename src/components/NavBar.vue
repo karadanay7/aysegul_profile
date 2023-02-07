@@ -1,25 +1,23 @@
 <template>
   <div class="navbar-container">
-      <nav class="navbar  navbar-expand-md ">
-    <div class="container ">
-      <img src="../assets/logo-no-background.png" class="rounded float-left" alt="Aysegul logo">
-      <router-link class="navbar-brand " to="/">AYSEGUL KARADAN</router-link>
-      <div class="collapse navbar-collapse ">
-        <ul class="navbar-nav d-flex justify-content-end w-100">
-        
+    <nav class="container">
+      <div class="row py-2 align-items-center">
+        <div class="col-6">
+          <router-link class="navbar-brand" to="/"> <img src="../assets/logo-no-background.png" class="rounded float-left" alt="Aysegul logo">AYSEGUL KARADAN</router-link>
+        </div>
+        <ul class="list-unstyled col-6 d-flex justify-content-end m-0">
           <li class="nav-item mx-4">
-            <router-link class="nav-link px-10 " to="/AboutMe">About Me</router-link>
+            <router-link class="text-nowrap custom-link-hover px-2 px-lg-5 " to="/AboutMe">About Me</router-link>
           </li>
           <li class="nav-item mx-4">
-            <router-link class="nav-link px-10 " to="/Projects">Projects</router-link>
+            <router-link class="text-nowrap custom-link-hover px-2 px-lg-5 " to="/Projects">Projects</router-link>
           </li>
           <li class="nav-item mx-4">
-            <router-link class="nav-link px-10 " to="/Blog">Blog</router-link>
+            <router-link class="text-nowrap custom-link-hover px-2 px-lg-5  " to="/Blog">Blog</router-link>
           </li>
         </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
   </div>
 </template>
 
@@ -40,23 +38,16 @@ export default {
   top: 0;
   left: 0;
   z-index: 1;
+  font-family: 'Roboto Condensed', sans-serif;
 }
-.navbar {
-  
-  display: flex;
-  justify-content: flex-end;
- 
-}
+
 a {
   color: white;
   text-decoration: none;
   font-weight: semibold;
-  white-space: nowrap;
-}
-.collapse {
-  font-size: larger;
   
 }
+
 .nav-item{
   transition:all 1s;
 }
@@ -70,7 +61,7 @@ a {
     color: white;
    
 }
-.nav-link:hover, .nav-link:focus {
+.custom-link-hover:hover, .custom-link-hover:focus {
     color: white;
 }
 img{
@@ -78,5 +69,16 @@ img{
   height: 60px;
   border-radius: 50%;
 }
-
+@media screen and (max-width: 770px) {
+  .navbar-brand{
+    font-size: 12px;
+   
+  }
+  .nav-item{
+    margin-top: -3.5px;
+    font-size: 14px; 
+    
+  }
+ 
+}
 </style>
