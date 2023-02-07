@@ -7,7 +7,7 @@
 
         <p class="card-paragraph">
           <font-awesome-icon icon="fa-solid fa-quote-left" />
-          <span class="paragraph">Hello! I'm Aysegul, a front-end developer. </span>
+          <span class="paragraph">Hi there! I'm Aysegul Karadan, a web developer with a background in industrial engineering. I bring a unique blend of technical skills and engineering knowledge to my work, creating dynamic and user-friendly websites that meet my clients' needs. I have a passion for innovation and a talent for problem-solving, and I'm always on the lookout for new and creative ways to use technology to drive progress and improve processes. In my spare time, I enjoy writing about engineering and technology, sharing my insights and knowledge through articles on various engineering blogs. If you're looking for a web developer who can bring both technical excellence and a deep understanding of the industry to your project, I'd love to hear from you! </span>
           <font-awesome-icon icon="fa-solid fa-quote-right" />
         </p>
         <ul class="card-icons">
@@ -24,7 +24,7 @@
           <li>
             <a
               target="_blank"
-              href="https://www.instagram.com/aysegulk_7/"
+              href="mailto:hello@aysegulk.me"
               class="card-icon-link"
             >
               <font-awesome-icon icon="fa-solid fa-envelope" />
@@ -53,27 +53,18 @@ export default {
   height: 100vh;
   width: 100vw;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url(../assets/3069841.jpg) no-repeat center;
+    url(../assets/pawel-czerwinski-95QNbCkVERM-unsplash.jpg) no-repeat center;
   position: relative;
   background-size: cover;
 }
-.fixed-centered {
-  font-size: 48px;
-  white-space: nowrap;
-  color: #fff;
-  top: 50%;
-  left: 50%;
-  position: fixed;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  transition: opacity 0.1s ease-in-out 0.6s;
-}
+
 
 .card-wrapper {
-  height: 500px;
-  width: 500px;
+  
+  height: 600px;
+  width: 1100px;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -88,15 +79,14 @@ export default {
 .card-wrapper:hover {
   box-shadow: 0 0 30px #fff;
 }
-.card-wrapper:hover .fixed-centered {
+.card-wrapper:hover.card {
   opacity: 0;
 }
 .card {
+  height: 600px;
+  width: 1100px;
   background-color: transparent;
   position: absolute;
-
-  height: 100%;
-  width: 100%;
   border-radius: inherit;
   display: flex;
   flex-direction: column;
@@ -108,9 +98,9 @@ export default {
   top: 0;
 }
 .card-img {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
   object-fit: cover;
   margin-top: 15px;
   border: 2px solid #fff;
@@ -138,13 +128,16 @@ export default {
 }
 .card-paragraph {
   font-size: 18px;
-  color: rgb(100, 124, 180);
+  color: white;
   width: 85%;
   text-align: justify;
   position: relative;
 }
 .paragraph {
-  margin-left: 0px;
+ 
+  margin-left: 20px;
+  font-size: 18px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-paragraph i {
@@ -191,7 +184,7 @@ export default {
   height: 35px;
   margin-bottom: 20px;
   border-radius: 50px;
-  background: linear-gradient(#b1d4e0, #145da0);
+  background: linear-gradient(#dbdf8f, #d3603d);
   color: #0c2d48;
   font-weight: bold;
   transition: 1s;

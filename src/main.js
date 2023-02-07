@@ -17,10 +17,11 @@ import { faQuoteRight } from '@fortawesome/free-solid-svg-icons/faQuoteRight';
 import {faInstagram}  from '@fortawesome/free-brands-svg-icons/faInstagram';
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons/faEnvelope';
+import {faGithub} from '@fortawesome/free-brands-svg-icons/faGithub';
 
 
 /* add icons to the library */
-library.add([faQuoteLeft,faQuoteRight,faLinkedin,faInstagram,faEnvelope])
+library.add([faQuoteLeft,faQuoteRight,faLinkedin,faInstagram,faEnvelope,faGithub])
 
 
 import "bootstrap/dist/css/bootstrap.css";

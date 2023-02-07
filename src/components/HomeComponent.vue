@@ -1,15 +1,35 @@
 <template>
+  
   <div class="container ">
     <div class="row my-4">
-      <div class="left-bar col-12 col-lg-6">
+      <div class="col-12 col-lg-7">
          <h2>Hi,</h2>
          <h2>I'm Aysegul,</h2>
-         <h2> a front-end developer.</h2>
-         <p class="my-4">I craft visually appealing and functional websites that enhance user experience.I'm a motivated junior web developer eager to bring my technical skills and innovative ideas to your next project. With a solid foundation in web development technologies and a passion for creating engaging websites, I'm ready to contribute to your team. Hire me to help build something amazing.</p>
+         <h2> a front-end developer </h2>
+         <h2> and, industrial engineer.</h2>
       </div>
-      <div class="right-bar col-12 col-lg-6">
+      <div class="col-12 col-lg-5 order-first order-lg-last">
         <img src="../assets/profile.png" class="img-fluid card-img" />
+        <div class="social-icons">
+          <a target="_blank"
+href="https://www.linkedin.com/in/aysegulkaradan/"
+              class="icons" >
+              <font-awesome-icon icon="fa-brands fa-linkedin" />
+            </a>
+            <a target="_blank"
+href="mailto:hello@aysegulk.me"
+              class="icons" >
+              <font-awesome-icon icon="fa-solid fa-envelope" />
+            </a>
+            <a target="_blank"
+href="https://github.com/karadanay7"
+              class="icons" >
+              <font-awesome-icon icon="fa-brands fa-github" />
+            </a>
+          
+         
        
+      </div>
       </div>
     </div>
   </div>    
@@ -21,13 +41,20 @@ export default {
 };
 </script>
 <style scoped>
-
+.icons{
+  font-size: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+    color: white;
+  margin-left: 33px;
+  margin-top: 15px;
+    
+}
 
 .container{
-  padding-top: 100px;
+  padding: 100px 0 0 0;
   height: 100vh;
   width: 100vw;
-  display: flex;
   justify-content: space-around;
   background: url(../assets/triangles-1430105_1280.webp);
   background-size: cover;
@@ -36,25 +63,28 @@ export default {
   letter-spacing: 3px;
 }
 .card-img{
-  margin-left: 150px;
   object-fit: cover;
   max-height: 50vh;
   max-width: 50vh;
   border-radius: 50%;
-  min-height: 100px;
+  min-height: 200px;
   box-shadow: 0px 0px 70px rgba(0,0,0,.9);
   
 }
 h2{
-  margin-left: 20px;
+ margin-left: 30px;
   font-size: 70px;
   font-family: 'Caveat', cursive;
   justify-content: left;
 }
-p{
-  margin-left: 20px;
-  font-size: 18px;
-  font-family: 'Roboto Condensed', sans-serif;
+
+@media screen and (max-width: 992px) {
+  h2 {
+    font-size: 36px;
+  }
+  .card-img{ 
+   min-height: 100px;
+  }
 }
 
 </style>
