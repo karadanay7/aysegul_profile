@@ -3,7 +3,10 @@
     <nav class="container">
       <div class="row py-2 align-items-center">
         <div class="col-6">
-          <router-link class="navbar-brand" to="/"> <img src="../assets/logo-no-background.png" class="rounded float-left" alt="Aysegul logo">AYSEGUL KARADAN</router-link>
+          <router-link class="navbar-brand" to="/">
+            <img src="../assets/logo-no-background.png" class="rounded float-left" alt="Aysegul logo">
+            <span class="d-none d-lg-inline"> AYSEGUL KARADAN </span>
+            </router-link>
         </div>
         <ul class="list-unstyled col-6 d-flex justify-content-end m-0">
           <li class="nav-item mx-4">
@@ -79,6 +82,23 @@ img{
     font-size: 14px; 
     
   }
+ 
+}
+@media screen and (max-width: 500px) {
+  .navbar-brand{
+    font-size: 10px;
+   
+  }
+  .nav-item{
+    margin-top: -3.5px;
+    font-size: 10px; 
+    
+  }
+  img{
+  width: 60px;
+  height: 40px;
+  border-radius: 50%;
+}
  
 }
 </style>
