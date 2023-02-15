@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div class="card-wrapper">
-      <div class="card">
+      
         <img src="../assets/gray.jpeg" class="card-img" />
         <h1 class="card-heading">AYSEGUL KARADAN</h1>
 
@@ -37,7 +37,7 @@
         >
           View Profile
         </button>
-      </div>
+     
     </div>
   </div>
 </template>
@@ -61,16 +61,16 @@ export default {
 
 .card-wrapper {
   
-  height: 600px;
-  width: 1100px;
+  height: auto;
+  width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   border-radius: 50px;
   overflow: hidden;
   transition: box-shadow 0.2s;
+  text-align: center;
 }
 .navbar-container {
   background-color: lightpink;
@@ -82,24 +82,13 @@ export default {
 .card-wrapper:hover.card {
   opacity: 0;
 }
-.card {
-  height: 600px;
-  width: 1100px;
-  background-color: transparent;
-  position: absolute;
-  border-radius: inherit;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  transition: top 0.2s 0.6s;
-}
-.card-wrapper:hover .card {
-  top: 0;
-}
+
+
 .card-img {
-  height: 200px;
-  width: 200px;
+  
+
+  height: 140px;
+  width: 140px;
   border-radius: 20%;
   object-fit: cover;
   margin-top: 15px;
@@ -122,9 +111,10 @@ export default {
     rgba(24, 145, 255, 0.46) 85.8%
   );
 
-  width: 60%;
+  width: 30%;
   text-align: center;
-  padding: 5px 0;
+  margin: 24px auto;
+ 
 }
 .card-paragraph {
   font-size: 18px;
@@ -132,18 +122,19 @@ export default {
   width: 85%;
   text-align: justify;
   position: relative;
+  margin: auto;
 }
 .paragraph {
  
   margin-left: 20px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-paragraph i {
   color: #fff;
   font-size: 25px;
-  font-style: italic;
+  
   position: absolute;
 }
 
@@ -153,6 +144,7 @@ export default {
   width: 50%;
   padding-inline-start: 0;
   justify-content: space-evenly;
+  margin: 25px auto;
 }
 .card-icon-link {
   text-decoration: none;
@@ -195,4 +187,52 @@ export default {
   color: rgb(255, 255, 255);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
+@media screen and (max-width: 790px) {
+
+  
+  .paragraph{
+    font-size: 14px;
+    letter-spacing: none;
+  }
+  .card-heading {
+    font-size: 15px;
+  }
+  .card-btn {
+  border: 2px solid #ddd;
+  outline: none;
+  width: 100px;
+  height: 25px;
+  font-size: 10px;
+
+}
+}
+@media screen and (max-width: 670px) {
+  
+  
+  .paragraph{
+    font-size: 13px;
+    letter-spacing: none;
+  }
+  .card-img {
+  
+
+  height: 100px;
+  width: 100px;
+}
+.card-icon-link {
+ 
+  width: 25px;
+  height: 25px;
+  
+}
+.card-icons{
+  margin:  auto;
+}
+.card-btn {
+  margin: 5px auto;
+}
+
+
+}
+
 </style>

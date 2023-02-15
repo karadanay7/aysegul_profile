@@ -1,14 +1,14 @@
 <template>
   
   <div class="container ">
-    <div class="row my-4">
-      <div class="col-12 col-lg-7">
+    <div class="row ">
+      <div class="profiletext col-12 col-lg-6">
          <h2>Hi,</h2>
          <h2>I'm Aysegul,</h2>
          <h2> a front-end developer </h2>
          <h2> and, industrial engineer.</h2>
       </div>
-      <picture class="  col-12 col-lg-5 order-first order-lg-last">
+      <picture class=" profilepic col-12 col-lg-6 order-first order-lg-last">
         <img src="../assets/profile.png" class="img-fluid d-block m-auto card-img" />
         <div class="social-icons">
           <a target="_blank"
@@ -53,6 +53,10 @@ export default {
 .social-icons{
   text-align: center;
 }
+.row{
+  margin: 0;
+  padding: 0;
+}
 .container{
   padding: 100px 0 0 0;
   height: 100vh;
@@ -63,6 +67,10 @@ export default {
   max-width: 1000cm;
   color: whitesmoke;
   letter-spacing: 3px;
+}
+.profilepic{
+  padding: 0;
+margin: auto;
 }
 .card-img{
   object-fit: cover;
