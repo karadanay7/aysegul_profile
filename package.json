@@ -13,11 +13,13 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/vue-fontawesome": "^3.0.3",
+    "@vueuse/head": "^1.0.25",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.3",
     "core-js": "^3.8.3",
     "get-google-fonts": "^1.2.2",
     "vue": "^3.2.13",
+    "vue-meta": "^2.4.0",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {

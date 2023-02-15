@@ -9,7 +9,7 @@
          <h2> and, industrial engineer.</h2>
       </div>
       <picture class=" profilepic col-12 col-lg-6 order-first order-lg-last">
-        <img src="../assets/profile.png" class="img-fluid d-block m-auto card-img" />
+        <img src="../assets/profile.png" class="img-fluid d-block m-auto card-img " alt="profilepicture" />
         <div class="social-icons">
           <a target="_blank"
 href="https://www.linkedin.com/in/aysegulkaradan/"

@@ -8,12 +8,24 @@
 
 import NavBar from './components/NavBar.vue'
 import BottomNav from './components/BottomNav.vue'
+import {useHead} from '@vueuse/head'
 
 export default {
   name: 'App',
   components: {
     NavBar,
     BottomNav,
+  },
+  setup(){
+    useHead({
+      title: "AysegulKaradan",
+      meta: [
+        {
+          name : "description",
+          content: "Aysegul Karadan"
+        }
+      ]
+    })
   }
 }
 

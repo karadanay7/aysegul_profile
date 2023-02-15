@@ -10,7 +10,7 @@
         </div>
         <ul class="list-unstyled col-6 d-flex justify-content-end m-0">
           <li class="nav-item mx-4">
-            <router-link class="text-nowrap custom-link-hover px-2 px-lg-5 " to="/AboutMe">About Me</router-link>
+            <router-link class="text-nowrap custom-link-hover px-2 px-lg-5 " to="/AysegulKaradan">About Me</router-link>
           </li>
           <li class="nav-item mx-4">
             <router-link class="text-nowrap custom-link-hover px-2 px-lg-5 " to="/Projects">Projects</router-link>

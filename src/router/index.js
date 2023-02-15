@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../components/HomeComponent.vue";
-import AboutMe from "../components/AboutMe.vue";
+import AysegulKaradan from "../components/AysegulKaradan.vue";
 import Projects from "../components/ProjectsComponent.vue";
 import Blog from "../components/BlogComponent.vue";
 import 'animate.css'
@@ -16,9 +16,9 @@ const routes = [
     component: Home,
   },
   {
-    path: "/AboutMe",
-    name: "AboutMe",
-    component: AboutMe,
+    path: "/AysegulKaradan",
+    name: "AysegulKaradan",
+    component: AysegulKaradan,
   },
   {
     path: "/Projects",
